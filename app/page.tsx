@@ -39,7 +39,7 @@ export default function Home() {
           <div className="hidden md:flex gap-6 text-sm">
             <a href="#">Home</a>
             <a href="#services">Services</a>
-            <a href="#book">Book</a>
+            <a href="#book">Consultation</a>
             <a href="#contact">Contact</a>
           </div>
 
@@ -55,12 +55,17 @@ export default function Home() {
           AMRA for Management & Training
         </h1>
 
-        <p className="text-gray-300 mb-6 max-w-2xl">
-          Helping organizations achieve compliance, certification, and operational excellence.
+        <p className="text-gray-300 mb-4 max-w-2xl">
+          Helping organizations achieve ISO certification, regulatory compliance,
+          and operational excellence.
+        </p>
+
+        <p className="text-yellow-500 mb-6">
+          25+ Years Experience | 50+ Certifications | 1200+ Professionals Trained
         </p>
 
         <a href="#book" className="bg-yellow-500 text-black px-6 py-3 rounded-lg">
-          Book Consultation
+          Request a Consultation
         </a>
       </section>
 
@@ -69,8 +74,10 @@ export default function Home() {
         <h2 className="text-3xl mb-6 font-bold">About Us</h2>
 
         <p className="text-gray-400 leading-7">
-          AMRA provides consulting in quality management, standardization, and metrology.
-          With over 25 years of experience, we help organizations achieve compliance and excellence.
+          AMRA for Management and Training Co. provides specialized consulting
+          services in quality management, standardization, and metrology.
+          With over 25 years of experience, we support organizations in achieving
+          compliance, operational excellence, and international recognition.
         </p>
       </section>
 
@@ -80,24 +87,33 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-          <div className="bg-[#1E293B] p-6 rounded-xl hover:scale-105 transition">
-            <h3 className="text-xl font-bold text-yellow-500 mb-3">ISO Systems</h3>
+          <div className="bg-[#1E293B] p-6 rounded-xl">
+            <h3 className="text-xl font-bold text-yellow-500 mb-3">
+              ISO Certification & Compliance
+            </h3>
             <p className="text-gray-400 text-sm">
-              Implementation of ISO 9001, ISO 14001, ISO 45001.
+              We support organizations in achieving ISO certification through
+              gap analysis, system implementation, internal audits, and full compliance alignment.
             </p>
           </div>
 
-          <div className="bg-[#1E293B] p-6 rounded-xl hover:scale-105 transition">
-            <h3 className="text-xl font-bold text-yellow-500 mb-3">Compliance</h3>
+          <div className="bg-[#1E293B] p-6 rounded-xl">
+            <h3 className="text-xl font-bold text-yellow-500 mb-3">
+              Quality Management Systems (QMS)
+            </h3>
             <p className="text-gray-400 text-sm">
-              Regulatory and international standards compliance.
+              Design and improve quality management systems to enhance performance,
+              ensure compliance, and drive continuous improvement.
             </p>
           </div>
 
-          <div className="bg-[#1E293B] p-6 rounded-xl hover:scale-105 transition">
-            <h3 className="text-xl font-bold text-yellow-500 mb-3">Training</h3>
+          <div className="bg-[#1E293B] p-6 rounded-xl">
+            <h3 className="text-xl font-bold text-yellow-500 mb-3">
+              Professional Training & Capacity Building
+            </h3>
             <p className="text-gray-400 text-sm">
-              Professional training programs for auditors and engineers.
+              Deliver specialized training programs for auditors, engineers,
+              and management teams in ISO standards and auditing practices.
             </p>
           </div>
 
@@ -121,7 +137,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-yellow-500">
               <Counter target={50} />
             </h3>
-            <p className="text-gray-400 mt-2">Companies Certified</p>
+            <p className="text-gray-400 mt-2">Organizations Certified</p>
           </div>
 
           <div>
@@ -136,42 +152,36 @@ export default function Home() {
 
       {/* BOOK CONSULTATION */}
       <section id="book" className="py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-8">Book Consultation</h2>
+        <h2 className="text-3xl font-bold mb-4">Request a Consultation</h2>
+
+        <p className="text-gray-400 mb-6 max-w-xl mx-auto">
+          Tell us about your needs and one of our experts will contact you within 24 hours
+          to discuss how we can support your organization.
+        </p>
 
         <form className="max-w-xl mx-auto space-y-4 text-left">
 
-          <input
-            type="text"
-            placeholder="Full Name"
-            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700"
-          />
+          <input type="text" placeholder="Full Name"
+            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700" />
 
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700"
-          />
+          <input type="email" placeholder="Email"
+            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700" />
 
-          <input
-            type="tel"
-            placeholder="Phone"
-            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700"
-          />
+          <input type="tel" placeholder="Phone"
+            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700" />
 
           <select className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700">
             <option>Select Service</option>
             <option>ISO Certification</option>
-            <option>Consulting</option>
+            <option>QMS Consulting</option>
             <option>Training</option>
           </select>
 
-          <textarea
-            placeholder="Message"
-            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700"
-          ></textarea>
+          <textarea placeholder="Message"
+            className="w-full p-3 rounded-lg bg-[#1E293B] border border-gray-700"></textarea>
 
-          <button className="w-full bg-yellow-500 text-black py-3 rounded-lg font-bold">
-            Submit Request
+          <button className="w-full bg-yellow-500 text-black py-3 rounded-lg font-bold hover:scale-105 transition">
+            Request a Consultation
           </button>
 
         </form>
@@ -184,11 +194,9 @@ export default function Home() {
         <p className="text-gray-400">okanakrieh02@hotmail.com</p>
         <p className="text-gray-400 mb-4">+962 785166620</p>
 
-        <a
-          href="https://wa.me/962785166620"
+        <a href="https://wa.me/962785166620"
           target="_blank"
-          className="bg-green-500 px-6 py-3 rounded-lg inline-block"
-        >
+          className="bg-green-500 px-6 py-3 rounded-lg inline-block">
           WhatsApp
         </a>
       </section>
